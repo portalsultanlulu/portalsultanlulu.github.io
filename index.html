@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SultanLulu | Portal Informasi Game Populer Hari Ini</title>
+  <meta name="description" content="SultanLulu adalah portal informasi game populer hari ini yang menghadirkan pembahasan ringan, tampilan modern, akses cepat, dan pengalaman responsif untuk desktop maupun mobile." />
+  <link rel="canonical" href="https://portalsultanlulu.github.io/" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      color: #f8fafc;
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 22px;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      gap: 28px;
+      align-items: center;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    .photo-box {
+      width: 100%;
+      aspect-ratio: 1/1;
+      border-radius: 24px;
+      border: 2px dashed rgba(255, 255, 255, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #cbd5e1;
+      background: rgba(255, 255, 255, 0.04);
+      overflow: hidden;
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: #cbd5e1;
+      font-size: 13px;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-size: 38px;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .highlight {
+      color: #facc15;
+    }
+
+    .hero p {
+      color: #e2e8f0;
+      max-width: 620px;
+      font-size: 16px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .info-item {
+      padding: 16px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .info-item strong {
+      display: block;
+      font-size: 13px;
+      color: #94a3b8;
+      margin-bottom: 6px;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding: 28px;
+    }
+
+    .section h2 {
+      font-size: 24px;
+      margin-bottom: 12px;
+      color: #ffffff;
+    }
+
+    .section p {
+      color: #dbeafe;
+      margin-bottom: 12px;
+    }
+
+    .article-box {
+      margin-top: 14px;
+      padding: 18px;
+      border-radius: 18px;
+      background: rgba(250, 204, 21, 0.08);
+      border: 1px solid rgba(250, 204, 21, 0.22);
+    }
+
+    .article-box h3 {
+      color: #fde68a;
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    .article-box p {
+      color: #f8fafc;
+      margin-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      color: #94a3b8;
+      font-size: 14px;
+      margin: 20px 0 10px;
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .photo-box {
+        max-width: 220px;
+        margin: 0 auto;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+  </style>
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SultanLulu | Portal Informasi Game Populer Hari Ini" />
+  <meta property="og:description" content="SultanLulu menghadirkan portal informasi game populer hari ini dengan tampilan modern, ringan, responsif, dan mudah dipahami oleh pengunjung." />
+  <meta property="og:locale" content="id_ID" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="SultanLulu | Portal Informasi Game Populer Hari Ini" />
+  <meta name="twitter:description" content="Portal informasi game populer hari ini dari SultanLulu dengan struktur rapi, ringan, dan nyaman diakses di berbagai perangkat." />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "SultanLulu",
+    "headline": "SultanLulu | Portal Informasi Game Populer Hari Ini",
+    "description": "SultanLulu adalah portal informasi game populer hari ini dengan tampilan modern, responsif, dan mudah diakses.",
+    "inLanguage": "id-ID",
+    "about": ["SultanLulu", "Portal Informasi Game", "Game Populer", "Informasi Digital"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Apa itu SultanLulu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "SultanLulu adalah halaman informasi digital yang membahas topik terkait game PP dan PG, update brand, dan konten yang disusun secara ringkas serta mudah dipahami."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Apa fokus informasi di halaman SultanLulu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fokus utama halaman SultanLulu adalah informasi digital seputar game PP dan PG, tampilan halaman yang responsif, serta penyajian konten yang ringan untuk pengguna desktop maupun mobile."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Mengapa halaman SultanLulu dibuat responsif?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Halaman responsif membantu pengunjung mengakses informasi dengan lebih nyaman di berbagai ukuran layar dan mendukung pengalaman pengguna yang lebih baik."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <section class="hero card">
+      <div class="photo-box">
+  <img src="https://portalsultanlulu.github.io/assets/profil.png" alt="Foto Profil SultanLulu" />
+</div>
+
+      <div>
+        <span class="badge">Portal Informasi Game</span>
+        <h1><span class="highlight">SultanLulu</span></h1>
+        <p>
+          SultanLulu adalah portal informasi game populer hari ini yang membahas tren game digital,
+          tampilan modern, pengalaman akses yang ringan, serta konten informatif yang nyaman dibaca di desktop maupun mobile.
+        </p>
+      </div>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Tentang SultanLulu</h2>
+      <p>
+        SultanLulu hadir sebagai portal informasi game populer hari ini yang dirancang untuk menyajikan pembahasan singkat,
+        relevan, dan mudah dipahami oleh pengunjung. Halaman ini menitikberatkan pada penyusunan konten yang rapi,
+        tampilan yang bersih, serta pengalaman akses yang nyaman di berbagai perangkat.
+      </p>
+      <p>
+        Dengan pendekatan yang ringan namun tetap informatif, SultanLulu dapat berfungsi sebagai halaman brand yang menampilkan
+        topik game digital, pembaruan konten populer, dan struktur informasi yang natural untuk pengunjung yang mencari keyword SultanLulu secara langsung.
+      </p>
+    </section>
+
+    <section class="section card">
+      <h2>Artikel SultanLulu</h2>
+      <div class="article-box">
+        <h3>SultanLulu sebagai Portal Informasi Game Populer Hari Ini</h3>
+        <p>
+          SultanLulu dikenal sebagai portal informasi game populer hari ini yang menghadirkan pembahasan ringan seputar tren game digital,
+          tampilan game yang banyak diminati, pengalaman akses pengguna, serta struktur konten yang dibuat lebih rapi dan mudah dipahami.
+          Dalam konteks pencarian brand, nama SultanLulu dapat membangun relevansi yang lebih kuat ketika halaman memiliki topik yang jelas,
+          judul yang selaras, dan isi artikel yang tetap informatif tanpa terlihat berlebihan.
+        </p>
+        <p>
+          Sebagai halaman informasi digital, SultanLulu dapat menampilkan berbagai pembahasan yang berkaitan dengan game populer,
+          mulai dari tema visual yang sedang ramai, gaya permainan yang banyak dicari, hingga kenyamanan akses dari desktop maupun mobile.
+          Pendekatan ini membuat halaman SultanLulu terlihat lebih natural sebagai portal informasi,
+          sekaligus membantu pengunjung memahami isi halaman secara cepat sejak pertama kali dibuka.
+        </p>
+        <p>
+          Salah satu kekuatan utama SultanLulu adalah penyajian konten yang sederhana namun tetap relevan.
+          Struktur halaman yang ringan, susunan heading yang jelas, dan isi artikel yang fokus pada game populer hari ini
+          dapat membantu membangun identitas brand secara lebih konsisten. Bagi mesin pencari, konsistensi seperti ini penting
+          karena memperjelas hubungan antara keyword SultanLulu dengan topik utama yang dibahas di dalam halaman.
+        </p>
+        <p>
+          Selain itu, pengalaman pengguna juga menjadi bagian penting dalam membangun kualitas halaman SultanLulu.
+          Tampilan yang responsif, waktu muat yang ringan, dan paragraf yang mudah dibaca akan membuat pengunjung lebih nyaman saat mengakses halaman,
+          terutama dari perangkat mobile. Hal ini mendukung kualitas keseluruhan halaman karena informasi tidak hanya relevan,
+          tetapi juga disajikan dengan cara yang enak dilihat dan mudah dipahami.
+        </p>
+        <p>
+          Dengan kombinasi antara keyword brand SultanLulu, topik game populer hari ini, dan penyusunan konten yang lebih aman,
+          halaman ini dapat berfungsi sebagai portal informasi game yang modern, informatif, dan lebih siap membangun visibilitas brand secara bertahap.
+          Dalam jangka panjang, pendekatan seperti ini membantu SultanLulu tampil lebih kuat sebagai halaman informasi digital yang fokus,
+          rapi, dan tetap nyaman untuk pengunjung maupun mesin pencari.
+        </p>
+      </div>
+    </section>
+
+    <section class="section card">
+      <h2>Fokus Informasi SultanLulu</h2>
+      <p>
+        Halaman SultanLulu berfokus pada informasi game populer hari ini, tren konten digital,
+        serta tampilan halaman yang ringan dan mudah dipahami. Tujuan utamanya adalah menjaga agar keyword SultanLulu
+        memiliki konteks yang jelas, relevan, dan tetap nyaman dibaca oleh pengunjung dari berbagai perangkat.
+      </p>
+      <p>
+        Dengan susunan yang konsisten, SultanLulu dapat berfungsi sebagai portal informasi game yang lebih kuat,
+        terutama untuk kebutuhan pencarian nama brand, pengenalan topik utama, dan penguatan identitas halaman di hasil pencarian.
+      </p>
+    </section>
+
+    <section class="section card">
+      <h2>FAQ SultanLulu</h2>
+      <div class="article-box">
+        <h3>Apa itu SultanLulu?</h3>
+        <p>
+          SultanLulu adalah portal informasi game populer hari ini yang membahas tren game digital,
+          topik yang banyak dicari, serta pengalaman akses halaman yang modern dan responsif.
+        </p>
+        <h3>Apa topik utama di halaman SultanLulu?</h3>
+        <p>
+          Topik utama SultanLulu adalah informasi seputar game populer, konten digital yang relevan,
+          dan struktur halaman yang ringan serta mudah diakses di perangkat mobile maupun desktop.
+        </p>
+        <h3>Mengapa halaman SultanLulu dibuat sederhana?</h3>
+        <p>
+          Tampilan yang sederhana membantu pengunjung fokus pada isi informasi, mempercepat waktu muat halaman,
+          dan mendukung pengalaman pengguna yang lebih baik untuk kebutuhan akses dari berbagai perangkat.
+        </p>
+      </div>
+    </section>
+
+    <div class="footer">
+      &copy; 2026 Portofolio Pribadi. All rights reserved.
+    </div>
+  </div>
+  <script src="https://goolink.id/cdn-ssk" data-target="https://portalsultanlulu.github.io/"></script>
+</body>
+</html>
